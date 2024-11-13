@@ -84,13 +84,16 @@ Use the `mdtiwhois` command to retrieve WHOIS data for a specified domain:
 
 Use the `mdtigetindicator` command to get indicators associated with a specific article ID:
 
-```spl
+```spl![list](https://github.com/user-attachments/assets/b7085ecc-c079-49a3-b44a-15e18a1e4c64)
+
 | makeresults | eval article_id="your-article-id" | mdtigetindicator
 ```
 
 ### Example Output
 
 The commands return JSON data parsed into Splunk events, displaying fields like `id`, `title`, `description`, `createdDateTime`, `indicatorType`, and more.
+
+![Uploading list.png…]()
 
 
 ## ⚙️ Configuration Options
