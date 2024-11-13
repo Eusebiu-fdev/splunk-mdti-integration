@@ -76,7 +76,7 @@ Use the `mdtilistarticles` command to fetch the latest threat articles from MDTI
 
 ### Example Output
 
-![rep](https://github.com/user-attachments/assets/75211c91-ad94-4a76-bd4a-80767c1448f3)
+![rep](https://github.com/user-attachments/assets/66c631c9-8f8b-4f06-80b1-3c16adbd9b4a)
 
 
 ### 2. Get WHOIS Information
