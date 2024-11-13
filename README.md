@@ -36,6 +36,7 @@ cd splunk-mdti-integration
 ### 2. Install Required Python Libraries
 
 Ensure you have the necessary Python libraries installed on your Splunk server:
+
 (STEP can be skipped as libraries are already installed within the app in **MicrosoftDefenderTI\bin\lib**)
 
 ```bash
