@@ -20,13 +20,16 @@ Before you get started, ensure you have the following:
 - **Python Packages**:
   - `splunklib` for Splunk SDK integration.
   - `msgraph-core` and `azure-identity` for Microsoft Graph API requests.
+  - `asyncio` for Asynchronous API calls.
+  - `configparser` to load configuration from the config.ini file.
+  - `httpx` for HTTP requests to the Microsoft Defender Threat Intelligence (MDTI) API.
 
 ## 🔧 Setup
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/splunk-mdti-integration.git
+git clone https://github.com/Eusebiu-fdev/splunk-mdti-integration.git
 cd splunk-mdti-integration
 ```
 
@@ -35,7 +38,7 @@ cd splunk-mdti-integration
 Ensure you have the necessary Python libraries installed on your Splunk server:
 
 ```bash
-pip install splunklib msgraph-core azure-identity asyncio httpx
+pip install splunklib msgraph-core azure-identity asyncio httpx configparser
 ```
 
 ### 3. Configure API Access
@@ -89,11 +92,12 @@ Use the `mdtigetindicator` command to get indicators associated with a specific 
 
 The commands return JSON data parsed into Splunk events, displaying fields like `id`, `title`, `description`, `createdDateTime`, `indicatorType`, and more.
 
-ALL commands found in /MicrosoftDefenderTI/bin/README.txt
 
 ## ⚙️ Configuration Options
 
 You can customize the behavior of the API calls by editing the Python scripts or adjusting query parameters directly within Splunk.
+
+* ALL commands found in /MicrosoftDefenderTI/bin/README.txt *
 
 ### Proxy Configuration
 
