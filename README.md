@@ -149,5 +149,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 With this integration, you can now leverage Microsoft Defender Threat Intelligence data directly in Splunk, enhancing your threat detection and response capabilities. 🎉
-
-Feel free to update or expand this README.md to fit your specific implementation and requirements.
