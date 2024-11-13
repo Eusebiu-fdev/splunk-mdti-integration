@@ -98,7 +98,8 @@ Use the `mdtigetindicator` command to get indicators associated with a specific 
 
 The commands return JSON data parsed into Splunk events, displaying fields like `id`, `title`, `description`, `createdDateTime`, `indicatorType`, and more.
 
-![list](https://github.com/user-attachments/assets/285d2611-4274-4eb6-87db-d7907f435aa1)
+![image](https://github.com/user-attachments/assets/efb2e443-20a6-4f3f-8461-0478cc6d68af)
+
 
 
 
