@@ -4,7 +4,7 @@ This repository contains a set of custom Splunk commands for seamless integratio
 
 ## 🌟 Features
 
-- **Custom Splunk Commands**: Provides multiple custom commands (`mdti_articles`, `mdti_whois`, `mdti_indicators`, etc) for querying MDTI API endpoints directly from Splunk.
+- **Custom Splunk Commands**: Provides multiple custom commands (`mdtilistarticles`, `mdtiwhois`, `mdtigetindicator`, etc) for querying MDTI API endpoints directly from Splunk.
 - **Real-Time Threat Intelligence**: Retrieves the latest threat intelligence data from Microsoft Defender, including threat articles, indicators, and WHOIS information.
 - **Asynchronous API Calls**: Leverages asynchronous Python functions (`asyncio`) for efficient data retrieval, ensuring minimal latency and faster response times.
 - **JSON Data Parsing**: Extracts and formats relevant data fields from the API response, handling potential errors and null values gracefully.
