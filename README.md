@@ -72,6 +72,11 @@ Use the `mdtilistarticles` command to fetch the latest threat articles from MDTI
 | makeresults | mdtilistarticles
 ```
 
+### Example Output
+
+![rep](https://github.com/user-attachments/assets/75211c91-ad94-4a76-bd4a-80767c1448f3)
+
+
 ### 2. Get WHOIS Information
 
 Use the `mdtiwhois` command to retrieve WHOIS data for a specified domain:
