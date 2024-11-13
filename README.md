@@ -115,6 +115,13 @@ proxies = {
 - **Invalid Characters in Headers**: If you encounter `Invalid characters (CR/LF) in header WWW-Authenticate`, ensure that your API requests do not include newline characters in headers.
 - **Attribute Errors**: If you receive errors like `'Object' has no attribute`, verify the field names against the latest Microsoft Graph API documentation.
 - **HTTP 400/401 Errors**: Check your Azure AD application permissions and API token configuration.
+-  The app is using Python version 3.9 - all dependencies should be compatible with this version, further updates must be compliant with this version
+-  bin/lib - asyncio folder has been removed from the MicrosoftDefenderTI/bin/lib
+           - change has been done because Splunk's Pyhton is using its own asyncio within /opt/splunk/lib compatible with this version
+-  graph_client_setup.py & config.ini - are dependant for all script calls
+-  urlib3 v.1.26.15 - added to MicrosoftDefenderTI/bin/lib as it's using an SSL protocol compatible with Splunk Enterprise (dependecy used for msgraph-sdk)
+
+
 
 ## 📚 Documentation
 
