@@ -4,7 +4,7 @@ This repository contains a set of custom Splunk commands for seamless integratio
 
 ## 🌟 Features
 
-- **Custom Splunk Commands**: Provides multiple custom commands (`mdti_articles`, `mdti_whois`, `mdti_indicators`) for querying MDTI API endpoints directly from Splunk.
+- **Custom Splunk Commands**: Provides multiple custom commands (`mdti_articles`, `mdti_whois`, `mdti_indicators`, etc) for querying MDTI API endpoints directly from Splunk.
 - **Real-Time Threat Intelligence**: Retrieves the latest threat intelligence data from Microsoft Defender, including threat articles, indicators, and WHOIS information.
 - **Asynchronous API Calls**: Leverages asynchronous Python functions (`asyncio`) for efficient data retrieval, ensuring minimal latency and faster response times.
 - **JSON Data Parsing**: Extracts and formats relevant data fields from the API response, handling potential errors and null values gracefully.
@@ -35,7 +35,7 @@ cd splunk-mdti-integration
 Ensure you have the necessary Python libraries installed on your Splunk server:
 
 ```bash
-pip install splunklib msgraph-core azure-identity
+pip install splunklib msgraph-core azure-identity asyncio httpx
 ```
 
 ### 3. Configure API Access
@@ -63,31 +63,33 @@ sudo /opt/splunk/bin/splunk restart
 
 ### 1. Fetch Threat Articles
 
-Use the `mdti_articles` command to fetch the latest threat articles from MDTI:
+Use the `mdtilistarticles` command to fetch the latest threat articles from MDTI:
 
 ```spl
-| makeresults | mdti_articles
+| makeresults | mdtilistarticles
 ```
 
 ### 2. Get WHOIS Information
 
-Use the `mdti_whois` command to retrieve WHOIS data for a specified domain:
+Use the `mdtiwhois` command to retrieve WHOIS data for a specified domain:
 
 ```spl
-| makeresults | eval host="example.com" | mdti_whois
+| makeresults | eval host="example.com" | mdtiwhois
 ```
 
 ### 3. List Indicators for an Article
 
-Use the `mdti_indicators` command to get indicators associated with a specific article ID:
+Use the `mdtigetindicator` command to get indicators associated with a specific article ID:
 
 ```spl
-| makeresults | eval article_id="your-article-id" | mdti_indicators
+| makeresults | eval article_id="your-article-id" | mdtigetindicator
 ```
 
 ### Example Output
 
 The commands return JSON data parsed into Splunk events, displaying fields like `id`, `title`, `description`, `createdDateTime`, `indicatorType`, and more.
+
+ALL commands found in /MicrosoftDefenderTI/bin/README.txt
 
 ## ⚙️ Configuration Options
 
