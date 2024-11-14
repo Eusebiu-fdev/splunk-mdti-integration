@@ -78,7 +78,7 @@ Use the `mdtilistarticles` command to fetch the latest threat articles from MDTI
 
 The commands return JSON data parsed into Splunk events, displaying fields like `id`, `title`, `summary`, `body`, `createdDateTime`, `lastUpdatedTime`, and more.
 
-![list](https://github.com/user-attachments/assets/9f167cd5-e6a8-4fe4-b2e0-0dfefd42cd77)
+![385989984-9f167cd5-e6a8-4fe4-b2e0-0dfefd42cd77](https://github.com/user-attachments/assets/6f128570-65dd-4c8e-afcf-4433e63524fe)
 
 
 ### 2. Get Reputation Data
