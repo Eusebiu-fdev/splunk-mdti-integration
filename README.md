@@ -37,7 +37,7 @@ cd splunk-mdti-integration
 
 Ensure you have the necessary Python libraries installed on your Splunk server:
 
-(STEP can be skipped as libraries are already installed within the app in **MicrosoftDefenderTI\bin\lib**)
+(**STEP can be skipped** as libraries are already installed within the app in **MicrosoftDefenderTI\bin\lib**)
 
 ```bash
 pip install splunklib msgraph-core azure-identity asyncio httpx configparser
