@@ -86,7 +86,7 @@ The commands return JSON data parsed into Splunk events, displaying fields like 
 Use the `genreputation` command to retrieve reputation data for a specified domain:
 
 ```spl
-| makeresults | eval host="example.com" | mdtiwhois
+| makeresults | eval host="example.com" | genreputation
 ```
 
 ### Example Output
