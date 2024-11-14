@@ -91,7 +91,7 @@ Use the `genreputation` command to retrieve reputation data for a specified doma
 
 ### Example Output
 
-![rep](https://github.com/user-attachments/assets/1ba93b30-ff6f-423e-a899-a151dcec634c)
+![385990259-1ba93b30-ff6f-423e-a899-a151dcec634c](https://github.com/user-attachments/assets/3b55f1f5-963f-4feb-9ecf-75a5eef56d60)
 
 
 ### 3. List Indicators for an Article
