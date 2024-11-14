@@ -81,7 +81,7 @@ The commands return JSON data parsed into Splunk events, displaying fields like 
 ![list](https://github.com/user-attachments/assets/9f167cd5-e6a8-4fe4-b2e0-0dfefd42cd77)
 
 
-### 2. Get WHOIS Information
+### 2. Get Reputation Data
 
 Use the `genreputation` command to retrieve reputation data for a specified domain:
 
