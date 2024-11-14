@@ -16,7 +16,7 @@ Before you get started, ensure you have the following:
 
 - **Splunk Enterprise** or **Splunk Cloud** with administrative access.
 - **Microsoft Defender Threat Intelligence (MDTI)** API access. You need a registered application in Azure AD with the necessary permissions.
-- **Python 3.9 or higher** installed on the Splunk server.
+- **Python 3.9** installed on the Splunk server.
 - **Python Packages**:
   - `splunklib` for Splunk SDK integration.
   - `msgraph-core` and `azure-identity` for Microsoft Graph API requests.
