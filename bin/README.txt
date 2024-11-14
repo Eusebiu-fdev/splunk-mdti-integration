@@ -25,7 +25,7 @@ SPLUNK COMMANDS:
 FILES                                                  COMMANDS
 ========================================================================================================
 genreputation                   | makeresults | eval host="www.example.com" | genreputation
-mdtireputation                  | makeresults | eval my_host="www.example.com" | mdtireputation fieldname=my_host
+mdtireputation                  | makeresults | eval host="www.example.com" | mdtireputation fieldname=host
 mdtigetarticle                  | makeresults | eval article="EXAMPLE" | mdtigetarticle
 mdtigetindicator                | makeresults | eval indicator="EXAMPLE" | mdtigetindicator
 mdtiwhois                       | makeresults | eval host="www.example.com" | mdtiwhois
