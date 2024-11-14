@@ -100,7 +100,7 @@ Use the `mdtigetindicator` command to get indicators associated with a specific 
 
 ```spl![list](https://github.com/user-attachments/assets/b7085ecc-c079-49a3-b44a-15e18a1e4c64)
 
-| makeresults | eval article="your-article-id" | mdtigetindicator
+| makeresults | eval indicator="your-article-indicator-id" | mdtigetindicator
 ```
 
 ### Example Output
