@@ -76,16 +76,23 @@ Use the `mdtilistarticles` command to fetch the latest threat articles from MDTI
 
 ### Example Output
 
-![rep](https://github.com/user-attachments/assets/66c631c9-8f8b-4f06-80b1-3c16adbd9b4a)
+The commands return JSON data parsed into Splunk events, displaying fields like `id`, `title`, `summary`, `body`, `createdDateTime`, `lastUpdatedTime`, and more.
+
+![list](https://github.com/user-attachments/assets/9f167cd5-e6a8-4fe4-b2e0-0dfefd42cd77)
 
 
 ### 2. Get WHOIS Information
 
-Use the `mdtiwhois` command to retrieve WHOIS data for a specified domain:
+Use the `genreputation` command to retrieve reputation data for a specified domain:
 
 ```spl
 | makeresults | eval host="example.com" | mdtiwhois
 ```
+
+### Example Output
+
+![rep](https://github.com/user-attachments/assets/1ba93b30-ff6f-423e-a899-a151dcec634c)
+
 
 ### 3. List Indicators for an Article
 
@@ -98,11 +105,7 @@ Use the `mdtigetindicator` command to get indicators associated with a specific 
 
 ### Example Output
 
-The commands return JSON data parsed into Splunk events, displaying fields like `id`, `title`, `summary`, `body`, `createdDateTime`, `lastUpdatedTime`, and more.
-
-![image](https://github.com/user-attachments/assets/efb2e443-20a6-4f3f-8461-0478cc6d68af)
-
-
+The commands return JSON data parsed into Splunk events, displaying fields like id, title, description, createdDateTime, indicatorType, and more.
 
 
 ## ⚙️ Configuration Options
